@@ -11,7 +11,22 @@ namespace Hello_world
         // Member attributes (variables) 
         private bool isEating;
         private int _numLives;
+
        
+
+        public int numLives
+        {
+            get
+            { return _numLives; }
+            set
+            {
+                if (value <= 10 && value >= 1)
+                {
+                    _numLives = value;
+                }
+            }
+        }
+
         public string Name;
         // Member Functions (methods) 
         public Cat() //constructor 
